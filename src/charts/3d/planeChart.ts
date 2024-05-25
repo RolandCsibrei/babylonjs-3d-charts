@@ -13,6 +13,7 @@ import { Texture } from "@babylonjs/core/Materials/Textures/texture";
 import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
 import { includeInGlow } from "../../effects/glowEffect";
 import { Scene } from "@babylonjs/core";
+import { isInRange } from "../../utils/helpers";
 
 export function drawPlaneChart(
     data: ChartData,
@@ -30,10 +31,25 @@ export function drawPlaneChart(
     // draw values
     const paths = [];
     for (let i = 0; i < data.z.values.length; i++) {
+        if (
+            chart.range.use &&
+            chart.range?.z &&
+            !isInRange(chart, null, null, data.z.values[i][j])
+        ) {
+            continue;
+        }
+
         const linePoints = [];
-        // const dz = (data.options.box.depth / (data.y.values.length + 1)) * i
 
         for (let j = 0; j < data.x.values[i].length; j++) {
+            if (
+                chart.range.use &&
+                chart.range?.x &&
+                !isInRange(chart, null, null, data.x.values[i][j])
+            ) {
+                continue;
+            }
+
             linePoints.push(
                 data.x.values[i][j],
                 data.y.values[i][j],
@@ -49,6 +65,7 @@ export function drawPlaneChart(
             : chart.colorMode === "add"
             ? GreasedLineMeshColorMode.COLOR_MODE_ADD
             : GreasedLineMeshColorMode.COLOR_MODE_SET;
+
     const line = CreateGreasedLine(
         chart.name,
         {
@@ -60,7 +77,7 @@ export function drawPlaneChart(
         },
         {
             color: chart.color,
-            useColors: true,
+            useColors: false,
             colors: [Color3.Green(), Color3.Yellow(), Color3.Green()],
             colorDistribution:
                 GreasedLineMeshColorDistribution.COLOR_DISTRIBUTION_REPEAT,

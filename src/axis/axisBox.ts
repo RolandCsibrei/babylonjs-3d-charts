@@ -3,14 +3,18 @@ import { getDz } from "../utils/bounds";
 import { ChartData, ChartDataBoundInfo } from "../model";
 import { ArcRotateCamera, Mesh, Nullable } from "@babylonjs/core";
 
-export function _drawBox(data: ChartData, boundInfo: ChartDataBoundInfo) {
+export function drawBox(data: ChartData, boundInfo: ChartDataBoundInfo) {
     if (!data.options.box.draw) {
         return;
     }
 
-    const dx = boundInfo.d.x;
-    const dy = boundInfo.d.y;
-    const dz = getDz(data, boundInfo);
+    // const dx = boundInfo.d.x;
+    // const dy = boundInfo.d.y;
+    // const dz = getDz(data, boundInfo);
+
+    const dx = data.options.dimensions.x
+    const dy = data.options.dimensions.y
+    const dz = data.options.dimensions.z
 
     // draw box
     const boxPoints = [
@@ -38,9 +42,10 @@ export function _drawBox(data: ChartData, boundInfo: ChartDataBoundInfo) {
     return axisBox;
 }
 
-export function zoomOnAxisBox(axisBox: Nullable<Mesh> | undefined, camera: ArcRotateCamera) {
+export function zoomOnAxisBox(axisBox: Nullable<Mesh> | undefined, zoomOnFactor: number, camera: ArcRotateCamera) {
     if (!axisBox) {
         return
     }
+    camera.zoomOnFactor = zoomOnFactor
     camera.zoomOn([axisBox]);
 }

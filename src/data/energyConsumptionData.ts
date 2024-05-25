@@ -3,8 +3,23 @@ import { Scalar } from "@babylonjs/core/Maths/math.scalar";
 import { ChartDataBoundInfo, ChartOptions } from "../model";
 import { Vector3 } from "@babylonjs/core";
 
+import data from "./energy-cinsumption.json";
+import { arrayConcat } from "../utils/helpers";
+
 export function getData() {
     const options: ChartOptions = {
+        camera: {
+            minZ: 0.1,
+            maxZ: 200,
+        },
+        dimensions: {
+            xCount: null,
+            yCount: 10,
+            zCount: null,
+            x: 10,
+            y: 10,
+            z: 4,
+        },
         fonts: [
             {
                 name: "droid-regular",
@@ -52,12 +67,9 @@ export function getData() {
             // fontStyleOverrides: { size: 2, resolution: 16, depth: 1 },
         },
         box: {
-            draw: true,
+            draw: false,
             color: Color3.Gray(),
             thickness: 0.04,
-            // width: 10,
-            // height: 10,
-            depth: "auto", // auto or value
         },
         glow: {
             enabled: true,
@@ -86,7 +98,7 @@ export function getData() {
                     fontStyle: "droid-small",
                 },
                 rulers: {
-                    draw: true,
+                    draw: false,
                     showValue: true,
                     color: Color3.Gray(),
                     thickness: 0.03,
@@ -101,7 +113,7 @@ export function getData() {
                     fontStyle: "droid-small",
                 },
                 rulers: {
-                    draw: true,
+                    draw: false,
                     showValue: true,
                     color: Color3.Gray(),
                     thickness: 0.03,
@@ -117,7 +129,7 @@ export function getData() {
         {
             type: "line",
             name: "line-chart",
-            draw: true,
+            draw: false,
             color: Color3.Black(),
             thickness: 0.1,
             glow: true,
@@ -127,7 +139,7 @@ export function getData() {
         {
             type: "line-area",
             name: "line-area-chart",
-            draw: true,
+            draw: false,
             color: Color3.Magenta(),
             thickness: 0.1,
             glow: true,
@@ -189,7 +201,7 @@ export function getData() {
         {
             type: "line",
             name: "line-chart",
-            draw: false,
+            draw: true,
             color: Color3.Red(),
             thickness: 0.1,
             glow: true,
@@ -199,7 +211,7 @@ export function getData() {
         {
             type: "line-area",
             name: "line-area-chart",
-            draw: true,
+            draw: false,
             color: Color3.Magenta(),
             thickness: 0.1,
             glow: true,
@@ -209,7 +221,7 @@ export function getData() {
         {
             type: "line-area",
             name: "line-area-chart2",
-            draw: true,
+            draw: false,
             color: Color3.Green(),
             thickness: 0.1,
             glow: true,
@@ -219,7 +231,7 @@ export function getData() {
         {
             type: "box",
             name: "box-chart",
-            draw: true,
+            draw: false,
             color: Color3.Blue(),
             width: 0.6,
             depth: 0.6,
@@ -230,7 +242,7 @@ export function getData() {
         {
             type: "box",
             name: "box-chart2",
-            draw: true,
+            draw: false,
             color: Color3.White(),
             width: 0.04,
             depth: 0.04,
@@ -263,7 +275,7 @@ export function getData() {
         {
             type: "plane",
             name: "plane-chart",
-            draw: true,
+            draw: false,
             color: Color3.Red(),
             colorMode: "multiply", // multiply, add, set
             smooth: false,
@@ -279,7 +291,7 @@ export function getData() {
         {
             type: "plane-wireframe",
             name: "wireframeplane-chart",
-            draw: true,
+            draw: false,
             color: Color3.Black(),
             width: 0.1,
             colorMode: "multiply", // multiply, add, set
@@ -311,114 +323,55 @@ export function getData() {
         },
     ];
 
-    const values = {
-        x: {
-            values: [
-                0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 18, 20, 21, 22, 23,
-                28,
-            ],
-        },
-        y: {
-            values: [
-                7, 8, 8.4, 8.8, 6, 3, 2, 0.5, 5, 6, 6.2, 7, 7.3, 9, 10, 8, 6, 6,
-                5.5, 4, 7, 8, 9,
-            ],
-        },
-    };
-
     const values3d = {
-        x: {
-            values: [
-                [
-                    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 18, 20, 21, 22,
-                    23, 28,
-                ],
-                [
-                    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 18, 20, 21, 22,
-                    23, 28,
-                ],
-                [
-                    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 18, 20, 21, 22,
-                    23, 28,
-                ],
-                [
-                    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 18, 20, 21, 22,
-                    23, 28,
-                ],
-                [
-                    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 18, 20, 21, 22,
-                    23, 28,
-                ],
-            ],
-        },
-        y: {
-            values: [
-                [
-                    7, 8, 8.4, 8.8, 6, 4, 5, 3.5, 5, 6, 6.2, 7, 7.3, 9, 10, 8,
-                    6, 6, 5.5, 4, 7, 8, 9,
-                ],
-                [
-                    7, 8, 8.4, 8.8, 6, 4, 5, 3.5, 5, 6, 6.2, 7, 7.3, 9, 10, 8,
-                    6, 6, 5.5, 4, 7, 8, 9,
-                ],
-                [
-                    7, 8, 8.4, 8.8, 6, 4, 5, 3.5, 5, 6, 6.2, 7, 7.3, 9, 10, 8,
-                    6, 6, 5.5, 4, 7, 8, 9,
-                ],
-                [
-                    7, 8, 8.4, 8.8, 6, 4, 5, 3.5, 5, 6, 6.2, 7, 7.3, 9, 10, 8,
-                    6, 6, 5.5, 4, 7, 8, 9,
-                ],
-                [
-                    7, 8, 8.4, 8.8, 6, 4, 5, 3.5, 5, 6, 6.2, 7, 7.3, 9, 10, 8,
-                    6, 6, 5.5, 4, 7, 8, 9,
-                ],
-            ],
-        },
-        z: {
-            values: [0, 4, 8, 12, 16],
-        },
-    };
-    const valuesPie = {
-        x: {
-            values: [20, 10, 30, 20, 20],
-        },
-        y: {
-            values: [1, 1, 1, 1, 1],
-        },
+        x: {},
+        y: {},
+        z: {},
     };
 
-    // randomize data
-    for (let i = 0; i < values3d.y.values.length; i++) {
-        for (let j = 0; j < values3d.y.values[i].length; j++) {
-            values3d.y.values[i][j] += Scalar.RandomRange(-2, 4);
-        }
+    const elctricity = data.monthlyvalues.filter(
+        (mv) => mv.key === "consumptionelectricity"
+    );
+    console.log(data);
+    // const xDistinctValues = new Set();
+    const xDistinctValues = [];
+    const yDistinctValues = [];
+    const xValues = [];
+    const yValues = [];
+    const zDistinctValues = new Set<number>();
+
+    //     xValues.add(mv.month)
+    // yValues.push(mv.value)
+
+    for (const mv of elctricity) {
+        zDistinctValues.add(mv.year);
     }
 
-    // pie
-    const min = Vector3.Zero();
-    const max = new Vector3(10, 10, 2);
-    const boundInfo: ChartDataBoundInfo = {
-        min,
-        max,
-        d: max.subtract(min),
-        multiplier: new Vector3(1,1,1)
-    };
-    options.boundInfo = boundInfo;
-    options.box.draw = false;
-    options.axis.x.labels.draw = false;
-    options.axis.y.labels.draw = false;
-    options.axis.x.rulers.draw = false;
-    options.axis.y.rulers.draw = false;
-    return {
-        options,
-        charts: chartsPie,
-        x: valuesPie.x,
-        y: valuesPie.y,
-        // x: values3d.x,
-        // y: values3d.y,
-        // z: values3d.z,
-    };
+    for (const zValue of zDistinctValues) {
+        const valesForZ = elctricity.filter(
+            (mv) => mv.year === zValue
+        );
+        const xValuesForZ = valesForZ.map((mv) => mv.month);
+        const yValuesForZ = valesForZ.map((mv) => mv.value);
+
+        xDistinctValues.length = 0
+        for (const v of xValuesForZ) {
+            // xDistinctValues.add(xValue);
+            xDistinctValues.push(v)
+        }
+
+        yDistinctValues.length = 0
+        for (const v of yValuesForZ) {
+            yDistinctValues.push(v);
+        }
+        // xValues.push(Array.from(xDistinctValues) as number[]);
+        xValues.push(arrayConcat(xDistinctValues, []));
+        yValues.push(arrayConcat(yDistinctValues, []));
+    }
+
+    values3d.x.values = xValues;
+    values3d.y.values = yValues;
+    values3d.z.values = Array.from(zDistinctValues) as number[];
 
     // default
     // return {
@@ -429,11 +382,11 @@ export function getData() {
     // };
 
     // enhanced
-    // return {
-    //     options,
-    //     charts: charts2,
-    //     x: values3d.x,
-    //     y: values3d.y,
-    //     z: values3d.z,
-    // };
+    return {
+        options,
+        charts: charts2,
+        x: values3d.x,
+        y: values3d.y,
+        z: values3d.z,
+    };
 }

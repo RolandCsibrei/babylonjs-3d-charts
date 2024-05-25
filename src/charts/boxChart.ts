@@ -17,7 +17,7 @@ export function drawBoxChart(
     }
 
     const parent = new TransformNode(chart.name, scene);
-    for (let i = 0; i < xValues.length - 1; i++) {
+    for (let i = 0; i < xValues.length; i++) {
         const boxMaterial = new StandardMaterial("box-material", scene);
         boxMaterial.emissiveColor = chart.color;
 

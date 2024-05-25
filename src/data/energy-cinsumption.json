@@ -1,0 +1,1118 @@
+{
+    "entity": "ConStatus",
+    "id": "BZ00030",
+    "buildingcode": "B0006",
+    "buildingname": "B.HU.BP",
+    "tenantcode": "T0000003",
+    "tenantname": "T.BP.003",
+    "buildingzonename": "BZ.AGORA.BP.00030",
+    "buildingzonecode": "BZ00030",
+    "sl_zone": "Agora",
+    "ll_zone": "Agora BP Building",
+    "floorcode": null,
+    "area_m2": 20000,
+    "lastupdate": "2024-05-23T07:31:08.5537213Z",
+    "monthlyvalues": [
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 1,
+            "value": 50677,
+            "value_m2": 2.53385
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 2,
+            "value": 39736,
+            "value_m2": 1.9868
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 3,
+            "value": 60863,
+            "value_m2": 3.04315
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 4,
+            "value": 49634,
+            "value_m2": 2.4817
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 5,
+            "value": 62422,
+            "value_m2": 3.1211
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 6,
+            "value": 63219,
+            "value_m2": 3.16095
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 7,
+            "value": 58833,
+            "value_m2": 2.94165
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 8,
+            "value": 61958,
+            "value_m2": 3.0979
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 9,
+            "value": 63103,
+            "value_m2": 3.15515
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 10,
+            "value": 63369,
+            "value_m2": 3.16845
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 11,
+            "value": 63418,
+            "value_m2": 3.1709
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2022,
+            "month": 12,
+            "value": 56727,
+            "value_m2": 2.83635
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 1,
+            "value": 63163,
+            "value_m2": 3.15815
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 2,
+            "value": 57644,
+            "value_m2": 2.8822
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 3,
+            "value": 63484,
+            "value_m2": 3.1742
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 4,
+            "value": 55633,
+            "value_m2": 2.78165
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 5,
+            "value": 62026,
+            "value_m2": 3.1013
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 6,
+            "value": 61834,
+            "value_m2": 3.0917
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 7,
+            "value": 60493,
+            "value_m2": 3.02465
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 8,
+            "value": 61571,
+            "value_m2": 3.07855
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 9,
+            "value": 59099,
+            "value_m2": 2.95495
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 10,
+            "value": 51671,
+            "value_m2": 2.58355
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 11,
+            "value": -49,
+            "value_m2": -0.00245
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2023,
+            "month": 12,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2024,
+            "month": 1,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2024,
+            "month": 2,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2024,
+            "month": 3,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2024,
+            "month": 4,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M045",
+            "key": "consumptionelectricity",
+            "year": 2024,
+            "month": 5,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 1,
+            "value": 103166.99999999988,
+            "value_m2": 5.158349999999994
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 2,
+            "value": 64648.30000000005,
+            "value_m2": 3.2324150000000023
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 3,
+            "value": 81256.69999999995,
+            "value_m2": 4.062834999999998
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 4,
+            "value": 93292.29999999981,
+            "value_m2": 4.664614999999991
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 5,
+            "value": 17469.600000000326,
+            "value_m2": 0.8734800000000162
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 6,
+            "value": 7584.100000000093,
+            "value_m2": 0.3792050000000047
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 7,
+            "value": 2.3999999999068677,
+            "value_m2": 0.00011999999999534338
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 8,
+            "value": 4228.800000000047,
+            "value_m2": 0.21144000000000232
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 9,
+            "value": 35550.799999999814,
+            "value_m2": 1.7775399999999908
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 10,
+            "value": 50095.60000000009,
+            "value_m2": 2.5047800000000047
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 11,
+            "value": 93999.09999999986,
+            "value_m2": 4.699954999999993
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2022,
+            "month": 12,
+            "value": 99867.60000000033,
+            "value_m2": 4.993380000000016
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 1,
+            "value": 98144.30000000005,
+            "value_m2": 4.9072150000000025
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 2,
+            "value": 93929.59999999986,
+            "value_m2": 4.696479999999993
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 3,
+            "value": 64813.39999999991,
+            "value_m2": 3.2406699999999953
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 4,
+            "value": 39392.39999999991,
+            "value_m2": 1.9696199999999953
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 5,
+            "value": 27031.199999999953,
+            "value_m2": 1.3515599999999977
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 6,
+            "value": 14165.399999999907,
+            "value_m2": 0.7082699999999953
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 7,
+            "value": 8798.100000000559,
+            "value_m2": 0.4399050000000279
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 8,
+            "value": 4591.09999999986,
+            "value_m2": 0.22955499999999301
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 9,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 10,
+            "value": 13250.999999999534,
+            "value_m2": 0.6625499999999768
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 11,
+            "value": -9.49999999976717,
+            "value_m2": -0.0004749999999883585
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2023,
+            "month": 12,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2024,
+            "month": 1,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2024,
+            "month": 2,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2024,
+            "month": 3,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2024,
+            "month": 4,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M046",
+            "key": "consumptionheating",
+            "year": 2024,
+            "month": 5,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 1,
+            "value": 9959,
+            "value_m2": 0.49795
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 2,
+            "value": 20167,
+            "value_m2": 1.00835
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 3,
+            "value": 48019,
+            "value_m2": 2.40095
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 4,
+            "value": 76220,
+            "value_m2": 3.811
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 5,
+            "value": 91843,
+            "value_m2": 4.59215
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 6,
+            "value": 116071,
+            "value_m2": 5.80355
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 7,
+            "value": 119428,
+            "value_m2": 5.9714
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 8,
+            "value": 136887,
+            "value_m2": 6.84435
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 9,
+            "value": 83255,
+            "value_m2": 4.16275
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 10,
+            "value": 70964,
+            "value_m2": 3.5482
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 11,
+            "value": 61709,
+            "value_m2": 3.08545
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2022,
+            "month": 12,
+            "value": 10700,
+            "value_m2": 0.535
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 1,
+            "value": 25975,
+            "value_m2": 1.29875
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 2,
+            "value": 27508,
+            "value_m2": 1.3754
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 3,
+            "value": 44080,
+            "value_m2": 2.204
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 4,
+            "value": 31435,
+            "value_m2": 1.57175
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 5,
+            "value": 84803,
+            "value_m2": 4.24015
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 6,
+            "value": 109266,
+            "value_m2": 5.4633
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 7,
+            "value": 132337,
+            "value_m2": 6.61685
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 8,
+            "value": 117610,
+            "value_m2": 5.8805
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 9,
+            "value": 79246,
+            "value_m2": 3.9623
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 10,
+            "value": 39315,
+            "value_m2": 1.96575
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 11,
+            "value": -15,
+            "value_m2": -0.00075
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2023,
+            "month": 12,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2024,
+            "month": 1,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2024,
+            "month": 2,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2024,
+            "month": 3,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2024,
+            "month": 4,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M047",
+            "key": "consumptioncooling",
+            "year": 2024,
+            "month": 5,
+            "value": 0,
+            "value_m2": 0
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 1,
+            "value": 297.0499999999997,
+            "value_m2": 0.014852499999999986
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 2,
+            "value": 119.08199999999988,
+            "value_m2": 0.005954099999999994
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 3,
+            "value": 245.76600000000053,
+            "value_m2": 0.012288300000000026
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 4,
+            "value": 194.442,
+            "value_m2": 0.009722100000000001
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 5,
+            "value": 336.3709999999992,
+            "value_m2": 0.01681854999999996
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 6,
+            "value": 372.01300000000083,
+            "value_m2": 0.01860065000000004
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 7,
+            "value": 767.6999999999998,
+            "value_m2": 0.03838499999999999
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 8,
+            "value": 421.5669999999991,
+            "value_m2": 0.021078349999999954
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 9,
+            "value": 449.4320000000007,
+            "value_m2": 0.022471600000000036
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 10,
+            "value": 450.01700000000073,
+            "value_m2": 0.022500850000000037
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 11,
+            "value": 468.07800000000134,
+            "value_m2": 0.023403900000000068
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2022,
+            "month": 12,
+            "value": 306.3169999999982,
+            "value_m2": 0.015315849999999909
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 1,
+            "value": 454.8179999999993,
+            "value_m2": 0.022740899999999967
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 2,
+            "value": 577.6489999999994,
+            "value_m2": 0.028882449999999973
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 3,
+            "value": 525.2830000000013,
+            "value_m2": 0.026264150000000062
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 4,
+            "value": 468.47600000000057,
+            "value_m2": 0.02342380000000003
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 5,
+            "value": 482.2509999999984,
+            "value_m2": 0.02411254999999992
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 6,
+            "value": 530.2350000000006,
+            "value_m2": 0.02651175000000003
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 7,
+            "value": 491.634,
+            "value_m2": 0.0245817
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 8,
+            "value": 1928.3099999999995,
+            "value_m2": 0.09641549999999997
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 9,
+            "value": 625.9270000000015,
+            "value_m2": 0.03129635000000008
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 10,
+            "value": 655.650999999998,
+            "value_m2": 0.0327825499999999
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 11,
+            "value": 660.0590000000011,
+            "value_m2": 0.03300295000000006
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2023,
+            "month": 12,
+            "value": 503.60399999999936,
+            "value_m2": 0.02518019999999997
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2024,
+            "month": 1,
+            "value": 775.9979999999996,
+            "value_m2": 0.03879989999999998
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2024,
+            "month": 2,
+            "value": 677.3820000000014,
+            "value_m2": 0.03386910000000007
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2024,
+            "month": 3,
+            "value": 608.4599999999991,
+            "value_m2": 0.030422999999999957
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2024,
+            "month": 4,
+            "value": 633.8820000000014,
+            "value_m2": 0.03169410000000007
+        },
+        {
+            "code": "M048",
+            "key": "consumptionwater",
+            "year": 2024,
+            "month": 5,
+            "value": 432.5970000000016,
+            "value_m2": 0.02162985000000008
+        },
+        {
+            "code": "M073",
+            "key": "consumptionelectricitylight",
+            "year": 2023,
+            "month": 11,
+            "value": 30985,
+            "value_m2": 1.54925
+        },
+        {
+            "code": "M073",
+            "key": "consumptionelectricitylight",
+            "year": 2023,
+            "month": 12,
+            "value": 27779,
+            "value_m2": 1.38895
+        },
+        {
+            "code": "M073",
+            "key": "consumptionelectricitylight",
+            "year": 2024,
+            "month": 1,
+            "value": 32218,
+            "value_m2": 1.6109
+        },
+        {
+            "code": "M073",
+            "key": "consumptionelectricitylight",
+            "year": 2024,
+            "month": 2,
+            "value": 29329,
+            "value_m2": 1.46645
+        },
+        {
+            "code": "M073",
+            "key": "consumptionelectricitylight",
+            "year": 2024,
+            "month": 3,
+            "value": 28760,
+            "value_m2": 1.438
+        },
+        {
+            "code": "M073",
+            "key": "consumptionelectricitylight",
+            "year": 2024,
+            "month": 4,
+            "value": 28199,
+            "value_m2": 1.40995
+        },
+        {
+            "code": "M073",
+            "key": "consumptionelectricitylight",
+            "year": 2024,
+            "month": 5,
+            "value": 19835,
+            "value_m2": 0.99175
+        },
+        {
+            "code": "M074",
+            "key": "consumptionelectricityfan",
+            "year": 2023,
+            "month": 11,
+            "value": 6917.369999999995,
+            "value_m2": 0.34586849999999975
+        },
+        {
+            "code": "M074",
+            "key": "consumptionelectricityfan",
+            "year": 2023,
+            "month": 12,
+            "value": 8329.25,
+            "value_m2": 0.4164625
+        },
+        {
+            "code": "M074",
+            "key": "consumptionelectricityfan",
+            "year": 2024,
+            "month": 1,
+            "value": 8745.70000000007,
+            "value_m2": 0.4372850000000035
+        },
+        {
+            "code": "M074",
+            "key": "consumptionelectricityfan",
+            "year": 2024,
+            "month": 2,
+            "value": 7385.259999999893,
+            "value_m2": 0.3692629999999946
+        },
+        {
+            "code": "M074",
+            "key": "consumptionelectricityfan",
+            "year": 2024,
+            "month": 3,
+            "value": 6694.200000000012,
+            "value_m2": 0.33471000000000056
+        },
+        {
+            "code": "M074",
+            "key": "consumptionelectricityfan",
+            "year": 2024,
+            "month": 4,
+            "value": 5178.110000000044,
+            "value_m2": 0.25890550000000223
+        },
+        {
+            "code": "M074",
+            "key": "consumptionelectricityfan",
+            "year": 2024,
+            "month": 5,
+            "value": 4039.7099999999627,
+            "value_m2": 0.20198549999999812
+        },
+        {
+            "code": "M075",
+            "key": "consumptionelectricityother",
+            "year": 2023,
+            "month": 11,
+            "value": 32934,
+            "value_m2": 1.6467
+        },
+        {
+            "code": "M075",
+            "key": "consumptionelectricityother",
+            "year": 2023,
+            "month": 12,
+            "value": 29273,
+            "value_m2": 1.46365
+        },
+        {
+            "code": "M075",
+            "key": "consumptionelectricityother",
+            "year": 2024,
+            "month": 1,
+            "value": 34847,
+            "value_m2": 1.74235
+        },
+        {
+            "code": "M075",
+            "key": "consumptionelectricityother",
+            "year": 2024,
+            "month": 2,
+            "value": 32585,
+            "value_m2": 1.62925
+        },
+        {
+            "code": "M075",
+            "key": "consumptionelectricityother",
+            "year": 2024,
+            "month": 3,
+            "value": 33881,
+            "value_m2": 1.69405
+        },
+        {
+            "code": "M075",
+            "key": "consumptionelectricityother",
+            "year": 2024,
+            "month": 4,
+            "value": 33938,
+            "value_m2": 1.6969
+        },
+        {
+            "code": "M075",
+            "key": "consumptionelectricityother",
+            "year": 2024,
+            "month": 5,
+            "value": 24405,
+            "value_m2": 1.22025
+        }
+    ],
+    "_rid": "YlpWAP0mjA0EAAAAAAAAAA==",
+    "_self": "dbs/YlpWAA==/colls/YlpWAP0mjA0=/docs/YlpWAP0mjA0EAAAAAAAAAA==/",
+    "_etag": "\"7100f17e-0000-0d00-0000-664ef0bc0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1716449468
+}

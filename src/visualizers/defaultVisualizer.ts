@@ -5,9 +5,10 @@ import { ChartData, ChartDataBoundInfo } from "../model";
 import { drawLineChart } from "../charts/lineChart";
 import { drawBoxChart } from "../charts/boxChart";
 import { drawPointChart } from "../charts/pointChart";
-import { drawLineWithAreaChart } from "../charts/areaChart";
+import { drawAreaChart } from "../charts/areaChart";
 import { drawPlaneChart } from "../charts/3d/planeChart";
 import { drawPlaneWireframeChart } from "../charts/3d/planeWireframeChart";
+import { drawPieChart } from "../charts/3d/pieChart";
 
 export function drawValues(
     data: ChartData,
@@ -20,7 +21,7 @@ export function drawValues(
             const yValues = data.y.values[i];
             const dx = boundInfo.d.x;
             const dy = boundInfo.d.y;
-            const dz = data.z.values[i]; // (data.options.box.depth / (data.y.values.length + 1)) * i
+            const dz = i
             drawValuesWithChart(data, xValues, yValues, boundInfo, dz, scene);
         }
     } else {
@@ -46,6 +47,17 @@ function drawValuesWithChart(
     for (const chart of charts) {
         if (chart.draw) {
             switch (chart.type) {
+                case "pie":
+                    drawPieChart(
+                        data,
+                        xValues,
+                        yValues,
+                        boundInfo,
+                        chart,
+                        dz,
+                        scene
+                    );
+                    break;
                 case "line":
                     drawLineChart(
                         data,
@@ -80,7 +92,7 @@ function drawValuesWithChart(
                     );
                     break;
                 case "line-area":
-                    drawLineWithAreaChart(
+                    drawAreaChart(
                         data,
                         xValues,
                         yValues,

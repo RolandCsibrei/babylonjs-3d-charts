@@ -3,9 +3,9 @@ import { ChartData, ChartDataBoundInfo } from "../model";
 import { GreasedLineRibbonPointsMode } from "@babylonjs/core/Meshes/GreasedLine/greasedLineBaseMesh";
 import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
 import { includeInGlow } from "../effects/glowEffect";
-import { Scene } from "@babylonjs/core";
+import { Color3, Scene } from "@babylonjs/core";
 
-export function drawLineWithAreaChart(
+export function drawAreaChart(
     data: ChartData,
     xValues: number[],
     yValues: number[],
@@ -18,10 +18,9 @@ export function drawLineWithAreaChart(
         return;
     }
 
-    // draw values
     const linePoints = [];
     const linePointsLower = [];
-    for (let i = 0; i < xValues.length - 1; i++) {
+    for (let i = 0; i < xValues.length; i++) {
         linePoints.push(xValues[i], yValues[i], dz);
         linePointsLower.push(xValues[i], 0, dz);
     }
@@ -35,7 +34,7 @@ export function drawLineWithAreaChart(
             },
         },
         {
-            color: chart.color,
+            color: Color3.Random(), // chart.color,
             width: chart.thickness,
         }
     );

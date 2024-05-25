@@ -11,17 +11,17 @@ import "@babylonjs/core/Debug/debugLayer";
 import "@babylonjs/inspector";
 
 import { ChartData } from "./model";
-import { getData } from "./data/demoData";
+import { getData } from "./data/energyConsumptionData";
 import { getBoundInfo } from "./utils/bounds";
-import { isXYZ } from "./utils/helpers";
+import { isXYZ, transformData, transformDataXYZ } from "./utils/helpers";
 import { drawChartMainLabel, setupFonts } from "./text/text";
 import { _setupGlow } from "./effects/glowEffect";
 import { drawBox, zoomOnAxisBox } from "./axis/axisBox";
 import { drawMarkersOnAxis } from "./axis/axis";
-import { drawValues } from "./visualizers/defaultVisualizer";
-// import { drawValues } from "./visualizers/enhancedVisualizer";
+// import { drawValues } from "./visualizers/defaultVisualizer";
+import { drawValues } from "./visualizers/enhancedVisualizer";
 
-export class AppOne {
+export class AppEC {
     private _canvas: HTMLCanvasElement;
     private _engine: Engine;
 
@@ -56,7 +56,7 @@ export class AppOne {
     }
 
     run() {
-        // this.debug(true);
+        this.debug(true);
         this._engine.runRenderLoop(() => {
             this.scene.render();
         });
@@ -116,7 +116,7 @@ export class AppOne {
         );
         camera.setTarget(Vector3.Zero());
         camera.attachControl(this._canvas, true);
-        camera.maxZ = 2000;
+        camera.maxZ = 20000;
         camera.minZ = 0.1;
         return camera;
     }
@@ -130,11 +130,17 @@ export class AppOne {
 
         light.intensity = 0.6;
 
-        await this.drawChart(getData());
+        const chartData = getData();
+        const transformedValues = isXYZ(chartData) ? transformDataXYZ(chartData) : transformData(chartData)
+        chartData.x = transformedValues.x
+        chartData.y = transformedValues.y
+        chartData.z = transformedValues.z
+        await this.drawChart(chartData);
     }
 
     public async drawChart(data: ChartData) {
-        const boundInfo = getBoundInfo(data, isXYZ(data) ? 0 : undefined);
+        console.log(data)
+        const boundInfo = getBoundInfo(data) //, isXYZ(data) ? 0 : undefined);
 
         await setupFonts(data);
 
@@ -145,7 +151,7 @@ export class AppOne {
 
         // this._drawValueMarkersOnAxis(data, boundInfo)
         drawMarkersOnAxis(data, boundInfo, this.scene);
-        drawChartMainLabel(data, boundInfo, this.scene);
+        // drawChartMainLabel(data, boundInfo, this.scene);
         drawValues(data, boundInfo, this.scene);
     }
 }

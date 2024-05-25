@@ -1,16 +1,13 @@
 import {
     Color3,
     CreateGreasedLine,
-    CreateText,
     Scene,
     StandardMaterial,
 } from "@babylonjs/core";
 import { getDz } from "../utils/bounds";
-import { _getFont } from "../text/text";
+import { getFont, createText } from "../text/text";
 import { ChartData, ChartDataBoundInfo } from "../model";
 import { excludeFromGlow } from "../effects/glowEffect";
-
-import MyEarcut from "earcut";
 
 export function _drawValueMarkersOnAxis(
     data: ChartData,
@@ -20,7 +17,7 @@ export function _drawValueMarkersOnAxis(
     const xValues = data.x.values;
     const dz = getDz(data, boundInfo);
 
-    const fontInfo = _getFont(data.options.axis.x.labels.fontStyle, data);
+    const fontInfo = getFont(data.options.axis.x.labels.fontStyle, data);
 
     const labelMaterial = new StandardMaterial("label-material", scene);
     labelMaterial.emissiveColor = Color3.White();
@@ -44,13 +41,11 @@ export function _drawValueMarkersOnAxis(
 
         if (data.options.axis.x.labels.draw) {
             const size = 0.3;
-            const xLabel = CreateText(
+            const xLabel = createText(
                 "x-label",
                 `${v}`,
-                fontInfo.fontData,
-                fontInfo.fontStyle,
-                scene,
-                MyEarcut
+                fontInfo,
+                scene
             );
 
             if (xLabel) {
@@ -84,13 +79,11 @@ export function _drawValueMarkersOnAxis(
 
         if (data.options.axis.y.labels.draw) {
             const size = 0.3;
-            const yLabel = CreateText(
+            const yLabel = createText(
                 "y-label",
                 `${v}`,
-                fontInfo.fontData,
-                fontInfo.fontStyle,
-                scene,
-                MyEarcut
+                fontInfo,
+                scene
             );
 
             if (yLabel) {

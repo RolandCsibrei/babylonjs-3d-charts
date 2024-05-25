@@ -1,11 +1,13 @@
 import { CreateSphere, Scene, StandardMaterial, TransformNode } from "@babylonjs/core";
-import { ChartData, ChartDataBoundInfo } from "../model";
+import { ChartData, ChartDataBoundInfo, ZValues } from "../model";
 import { includeInGlow } from "../effects/glowEffect";
+import { getPositionNormalizers } from "../utils/helpers";
 
     export function drawPointChart(
         data: ChartData,
         xValues: number[],
         yValues: number[],
+        zValues: ZValues,
         boundInfo: ChartDataBoundInfo,
         chart: ChartData,
         dz: number,
@@ -15,8 +17,8 @@ import { includeInGlow } from "../effects/glowEffect";
             return;
         }
         const parent = new TransformNode(chart.name, scene);
-
-        for (let i = 0; i < xValues.length - 1; i++) {
+        const positionNormalizers = getPositionNormalizers(data, xValues, yValues, zValues)
+        for (let i = 0; i < xValues.length; i++) {
             const sphereMaterial = new StandardMaterial(
                 "sphere-material",
                 scene
@@ -27,9 +29,9 @@ import { includeInGlow } from "../effects/glowEffect";
                 diameter: chart.diameter,
                 segments: chart.segments,
             });
-            sphere.position.x = xValues[i];
-            sphere.position.y = yValues[i];
-            sphere.position.z = dz;
+            sphere.position.x = xValues[i] * positionNormalizers.x;
+            sphere.position.y = yValues[i] * positionNormalizers.y;
+            sphere.position.z = dz * positionNormalizers.z;
 
             sphere.material = sphereMaterial;
             sphere.parent = parent;
